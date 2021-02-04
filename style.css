@@ -9,7 +9,7 @@ body {
     font-family: 'montserrat', sans-serif;
 }
 
-.app-wrap {
+nav{
     display: flex;
     flex-direction: column;
     min-height: 100vh;

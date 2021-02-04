@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!--BootStrap Link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <title>Weather Dashboard</title>
@@ -12,22 +12,34 @@
 </head>
 <body>
 
-    <div class="app-wrap">
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+<!--Search Bar-->
+
+    <div class="card">
         <header>
             <input type="text" autocomplete="off" class="search-box"
-            placeholder="Search for a City..."/>
+            placeholder="Search for a City"/>
+            <ul class="col-4 list-group list-group-flush history">
+            </ul>  
         </header>
 
         <main>
             <section class="location">
-                <div class="city"> Seattle, WA </div>
-                <div class="date">Tuesday February 02, 2021</div>
+                <div class="city"></div>
+                <div class="date"></div>
             </section>
-
             <div class="current">
-                <div class="temp">45<span>°F</div>
-                    <div class="high-low">50°F/39°F</div>
+                <div class="temp"><span></div>
+                    <div class="weather"></div>
+                    <div class="high-low"></div>
+                    <div class="uvIndex"></div>  
             </div>
+
+<!--Five Day Forecast Display-->
+            <div class="fiveDayForecast row"></div>
 
 
         </main>
